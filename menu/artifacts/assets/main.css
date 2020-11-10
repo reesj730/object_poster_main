@@ -1,0 +1,126 @@
+
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  width: 100%;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.out-of-screen {
+  position: absolute;
+  width: 55vw;
+  top: -1.5vw;
+  left: 1vw;
+  z-index: 1;
+}
+
+.out-of-screen:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.out-of-screen3 {
+  position: absolute;
+  width: 18vw;
+  height: 12vw;
+  top: 38vw;
+  left: 82vw;
+  z-index: 1;
+}
+
+.out-of-screen4 {
+  position: absolute;
+  width: 25vw;
+  top: 35.5vw;
+  left: -4vw;
+  z-index: 1;
+}
+
+.out-of-screen5 {
+  position: absolute;
+  width: 18vw;
+  top: 2vw;
+  left: 55vw;
+  z-index: 1;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.out-of-screen5:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.out-of-screen6 {
+  position: absolute;
+  width: 22vw;
+  top: 2vw;
+  left: 76vw;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.out-of-screen6:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.out-of-screen7 {
+  position: absolute;
+  width: 15vw;
+  top: 25vw;
+  left: 60vw;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.out-of-screen7:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.out-of-screen8 {
+  position: absolute;
+  width: 25vw;
+  top: 28vw;
+  left: 27vw;
+  z-index: 1;
+}
+
+.out-of-screen8:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+
